@@ -81,7 +81,7 @@ function Navbar() {
                 servicesClick={servicesClick}
               >
                 <NavLinks to="/services" onClick={closeMobileMenu}>
-                  Services
+                  Challenges
                 </NavLinks>
               </NavItem>
             </NavMenu>
