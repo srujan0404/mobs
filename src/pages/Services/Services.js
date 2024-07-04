@@ -1,5 +1,5 @@
-import React from 'react';
-import { InfoSection, Pricing } from '../../components';
+import React from "react";
+import { InfoSection, Pricing } from "../../components";
 
 function Services() {
   return (

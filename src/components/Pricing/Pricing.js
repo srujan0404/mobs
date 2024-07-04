@@ -1,10 +1,6 @@
-import React from 'react';
-import { Button } from '../../globalStyles';
-import { AiFillThunderbolt } from 'react-icons/ai';
-import { GiCrystalBars } from 'react-icons/gi';
-import { GiCutDiamond, GiRock } from 'react-icons/gi';
-import { GiFloatingCrystal } from 'react-icons/gi';
-import { IconContext } from 'react-icons/lib';
+import React from "react";
+import { IconContext } from "react-icons/lib";
+import image from "../../images/2.png";
 import {
   PricingSection,
   PricingWrapper,
@@ -13,57 +9,71 @@ import {
   PricingCard,
   PricingCardInfo,
   PricingCardIcon,
+  OriginalPrice,
   PricingCardPlan,
+  HighlightedFeature,
   PricingCardCost,
-  PricingCardLength,
   PricingCardFeatures,
-  PricingCardFeature
-} from './Pricing.elements';
+  PricingCardFeature,
+  ExternalButton, // Use the new styled component for external links
+} from "./Pricing.elements";
 
 const Pricing = () => {
   return (
-    <IconContext.Provider value={{ color: '#a9b3c1', size: 64 }}>
+    <IconContext.Provider value={{ color: "#a9b3c1", size: 64 }}>
       <PricingSection>
         <PricingWrapper>
-          <PricingHeading>Our Services</PricingHeading>
+          <PricingHeading>Live Challenges</PricingHeading>
           <PricingContainer>
-            <PricingCard to='/sign-up'>
+            <PricingCard>
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <GiRock />
+                  <img
+                    src={image}
+                    alt="icon"
+                    style={{ height: "100px", width: "100px" }}
+                  />
                 </PricingCardIcon>
-                <PricingCardPlan>BASIC</PricingCardPlan>
-                <PricingCardCost>₹79</PricingCardCost>
+                <PricingCardPlan>7 Day LinkedIn Challenge</PricingCardPlan>
+                <OriginalPrice>₹699/-</OriginalPrice>
+                <PricingCardCost>₹99/-</PricingCardCost>
                 <PricingCardFeatures>
-                  <PricingCardFeature>LinkedIn Cookbook</PricingCardFeature>
-                  <PricingCardFeature>Daily JS Checklist</PricingCardFeature>
-                  <PricingCardFeature>Pro JS Checklist</PricingCardFeature>
-                  <PricingCardFeature>Job Sheet Tracker</PricingCardFeature>
+                  <HighlightedFeature>LinkedIn Cookbook</HighlightedFeature>
+                  <HighlightedFeature>AI LinkedIn Tool</HighlightedFeature>
+                  <HighlightedFeature>
+                    Daily Job Search Checklist
+                  </HighlightedFeature>
+                  <HighlightedFeature>
+                    2 Community Calls during Challenge
+                  </HighlightedFeature>
+                  <PricingCardFeature>
+                    Passive Job Search Checklist
+                  </PricingCardFeature>
+                  <PricingCardFeature>
+                    Profile Building Checklist
+                  </PricingCardFeature>
+                  <HighlightedFeature>
+                    Private WhatsApp Community
+                  </HighlightedFeature>
+                  <HighlightedFeature>
+                    LinkedIn Templates for Job Search
+                  </HighlightedFeature>
+                  <PricingCardFeature>
+                    Cold Email Templates for Job Search
+                  </PricingCardFeature>
                   <PricingCardFeature>Webinar Recording</PricingCardFeature>
-                  <PricingCardFeature>Job Search Templates</PricingCardFeature>
+                  <PricingCardFeature>
+                    LinkedIn Workshop Slides
+                  </PricingCardFeature>
+                  <PricingCardFeature>+4 more</PricingCardFeature>
                 </PricingCardFeatures>
-                <Button primary>Choose Plan</Button>
-              </PricingCardInfo>
-            </PricingCard>
-            <PricingCard to='/sign-up'>
-              <PricingCardInfo>
-                <PricingCardIcon>
-                  <GiCrystalBars />
-                </PricingCardIcon>
-                <PricingCardPlan>Pro</PricingCardPlan>
-                <PricingCardCost>₹199</PricingCardCost>
-                <PricingCardFeatures>
-                  <PricingCardFeature>LinkedIn Cookbook</PricingCardFeature>
-                  <PricingCardFeature>All-Star Checklist</PricingCardFeature>
-                  <PricingCardFeature>Daily JS Checklist</PricingCardFeature>
-                  <PricingCardFeature>Pro JS Checklist</PricingCardFeature>
-                  <PricingCardFeature>Job Sheet Tracker</PricingCardFeature>
-                  <PricingCardFeature>Webinar Recording</PricingCardFeature>
-                  <PricingCardFeature>Job Search Templates</PricingCardFeature>
-                  <PricingCardFeature>Private WhatsApp Group</PricingCardFeature>
-                  <PricingCardFeature>1 - 1  guidance call</PricingCardFeature>
-                </PricingCardFeatures>
-                <Button primary>Choose Plan</Button>
+                <ExternalButton
+                  href="https://pages.razorpay.com/challengemobxharshith"
+                  target="_blank"
+                  primary
+                >
+                  Enroll Now
+                </ExternalButton>
               </PricingCardInfo>
             </PricingCard>
           </PricingContainer>
@@ -71,6 +81,6 @@ const Pricing = () => {
       </PricingSection>
     </IconContext.Provider>
   );
-}
+};
 
 export default Pricing;

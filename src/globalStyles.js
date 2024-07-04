@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 * {
@@ -24,7 +24,6 @@ const GlobalStyles = createGlobalStyle`
 }
 `;
 
-
 export const Container = styled.div`
   z-index: 1;
   width: 100%;
@@ -34,32 +33,27 @@ export const Container = styled.div`
   padding-right: 50px;
   padding-left: 50px;
   @media screen and (max-width: 991px) {
-  padding-right: 30px;
-  padding-left: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 `;
 
 export const Button = styled.button`
   border-radius: 4px;
-  background: ${({ primary }) => (primary ? '#4B59F7' : '#0467FB')};
+  background: ${({ primary }) =>
+    primary ? "#000000" : "#000000"}; /* Always black */
   white-space: nowrap;
-  padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
-  color: #fff;
-  font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
+  padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
+  color: #ffffff; /* White text */
+  font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
   outline: none;
   border: none;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif; 
-  font-weight: bold; 
-  &:hover {
-    transition: all 0.3s ease-out;
-    background: #fff;
-    background-color: ${({ primary }) => (primary ? '#0467FB' : '#4B59F7')};
-  }
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
   @media screen and (max-width: 960px) {
     width: 100%;
   }
 `;
 
-
-export default  GlobalStyles;   
+export default GlobalStyles;

@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.div`
   background-color: #101522;
@@ -8,6 +8,25 @@ export const FooterContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+`;
+
+export const Button = styled.button`
+  border-radius: 4px;
+  background: ${({ primary }) => (primary ? "#fff" : "#fff")};
+  white-space: nowrap;
+  padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
+  color: #000000;
+  font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  @media screen and (max-width: 960px) {
+    width: 100%;
+  }
 `;
 
 export const FooterSubscription = styled.section`
@@ -19,24 +38,30 @@ export const FooterSubscription = styled.section`
   margin-bottom: 24px;
   padding: 24px;
   color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 `;
 
 export const FooterSubHeading = styled.p`
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 24px;
   font-size: 24px;
+  font-weight: bold;
 `;
 
 export const FooterSubText = styled.p`
   margin-bottom: 24px;
   font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 `;
 
 export const Form = styled.form`
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 
   @media screen and (max-width: 820px) {
     flex-direction: column;
@@ -52,6 +77,8 @@ export const FormInput = styled.input`
   border: none;
   font-size: 16px;
   border: 1px solid #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 
   &::placeholder {
     color: #242424;
@@ -68,6 +95,8 @@ export const FooterLinksContainer = styled.div`
   max-width: 1000px;
   display: flex;
   justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 
   @media screen and (max-width: 820px) {
     padding-top: 32px;
@@ -76,6 +105,8 @@ export const FooterLinksContainer = styled.div`
 
 export const FooterLinksWrapper = styled.div`
   display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 
   @media screen and (max-width: 820px) {
     flex-direction: column;
@@ -91,6 +122,8 @@ export const FooterLinkItems = styled.div`
   width: 160px;
   box-sizing: border-box;
   color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 
   @media screen and (max-width: 420px) {
     margin: 0;
@@ -101,12 +134,16 @@ export const FooterLinkItems = styled.div`
 
 export const FooterLinkTitle = styled.h2`
   margin-bottom: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 `;
 
 export const FooterLink = styled(Link)`
   color: #fff;
   text-decoration: none;
   margin-bottom: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 
   &:hover {
     color: #0467fb;
@@ -117,6 +154,8 @@ export const FooterLink = styled(Link)`
 export const SocialMedia = styled.section`
   max-width: 1000px;
   width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 `;
 
 export const SocialMediaWrap = styled.div`
@@ -126,6 +165,8 @@ export const SocialMediaWrap = styled.div`
   width: 90%;
   max-width: 1000px;
   margin: 40px auto 0 auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 
   @media screen and (max-width: 820px) {
     flex-direction: column;
@@ -141,6 +182,8 @@ export const SocialLogo = styled(Link)`
   display: flex;
   align-items: center;
   margin-bottom: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 
   &:hover {
     color: #0467fb;
@@ -150,13 +193,15 @@ export const SocialLogo = styled(Link)`
 
 export const SocialIcon = styled.img`
   margin-right: 0.5rem;
-  height: 48px; 
+  height: 48px;
   width: 68px;
 `;
 
 export const WebsiteRights = styled.small`
   color: #fff;
   margin-bottom: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 `;
 
 export const SocialIcons = styled.div`
@@ -164,11 +209,15 @@ export const SocialIcons = styled.div`
   justify-content: space-between;
   align-items: end;
   width: 240px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 `;
 
 export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 
   &:hover {
     color: #0467fb;
